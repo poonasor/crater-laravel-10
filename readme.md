@@ -2,27 +2,71 @@
 
 ## Introduction
 
-Currently WIP
+Based off of the original Crater Invoice App but upgraded to Laravel 10.
 
 [View Original repo here](https://github.com/crater-invoice/crater)
 
-# Table of Contents
-
-1. [Documentation](#documentation)
-2. [Download](#download)
-3. [Mobile Apps](#mobile-apps)
-4. [Discord](#discord)
-5. [Roadmap](#roadmap)
-6. [Credits](#credits)
-7. [Help us translate](#translate)
-8. [License](#license)
-
 ## Documentation
 
-- [Installation Steps](https://docs.craterapp.com/installation.html)
-- [User Guide](https://docs.craterapp.com/)
-- [Developer Guide](https://docs.craterapp.com/developer-guide.html)
-- [API Documentation](https://api-docs.craterapp.com)
+- [Original Documentation](https://docs.craterapp.com/)
+- [Original API Documentation](https://api-docs.craterapp.com)
+
+### Installation
+
+**Clone Repo**
+Create a folder and clone Git Repo:
+```
+git clone https://github.com/poonasor/crater-laravel-10 .
+```
+
+**Update and Install Packages**
+```
+composer update
+composer install
+```
+```
+npm update
+npm install
+```
+**Create database_created file**
+Create a new file under `/storage/app/` named `database_created` with any text, save the file.
+
+**Update .env file**
+Update the .env file (if no .env copy from .env.example) with the following
+(Use your own DB details)
+```
+APP_URL=http://localhost:8000
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=8889
+DB_DATABASE=crater
+DB_USERNAME=root
+DB_PASSWORD="root"
+
+SANCTUM_STATEFUL_DOMAINS=localhost:8000
+SESSION_DOMAIN=localhost
+```
+
+**Run commands**
+```
+php artisan migrate && php artisan db:seed
+php  artisan db:seed —Class=DemoSeeder
+```
+
+**Video Guide**
+https://www.youtube.com/watch?v=waheY7LHBdc
+
+**Video Guide (Production)**
+https://www.youtube.com/watch?v=i_-iOpvN3tI
+
+**Run the local environments **
+```
+npm run dev
+npm run build
+
+php artisan serve
+```
 
 ## Discord
 
