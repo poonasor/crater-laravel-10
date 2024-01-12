@@ -55,7 +55,7 @@ SESSION_DOMAIN=localhost
 **Run commands**
 ```
 php artisan migrate && php artisan db:seed
-php  artisan db:seed —Class=DemoSeeder
+php artisan db:seed --class=DemoSeeder
 ```
 Video Guide: https://www.youtube.com/watch?v=waheY7LHBdc
 Video Guide (Production): https://www.youtube.com/watch?v=i_-iOpvN3tI
