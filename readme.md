@@ -55,12 +55,14 @@ php  artisan db:seed —Class=DemoSeeder
 ```
 
 **Video Guide**
+
 https://www.youtube.com/watch?v=waheY7LHBdc
 
 **Video Guide (Production)**
+
 https://www.youtube.com/watch?v=i_-iOpvN3tI
 
-**Run the local environments **
+**Run the local environments**
 ```
 npm run dev
 npm run build
