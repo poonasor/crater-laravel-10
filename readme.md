@@ -4,6 +4,10 @@
 
 Based off of the original Crater Invoice App but upgraded to Laravel 10.
 
+This repo by-passes the installation with Laravels migrations.
+
+Running `npm run dev` and `php artisan serve` in separate terminal windows you can rebuild the project on the fly.
+
 [View Original repo here](https://github.com/crater-invoice/crater)
 
 ## Documentation
@@ -53,18 +57,13 @@ SESSION_DOMAIN=localhost
 php artisan migrate && php artisan db:seed
 php  artisan db:seed —Class=DemoSeeder
 ```
-
-**Video Guide**
-
-https://www.youtube.com/watch?v=waheY7LHBdc
-
-**Video Guide (Production)**
-
-https://www.youtube.com/watch?v=i_-iOpvN3tI
+Video Guide: https://www.youtube.com/watch?v=waheY7LHBdc
+Video Guide (Production): https://www.youtube.com/watch?v=i_-iOpvN3tI
 
 **Run the local environments**
 ```
 npm run dev
+or
 npm run build
 
 php artisan serve
